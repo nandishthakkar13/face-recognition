@@ -1,0 +1,41 @@
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.button-detect{
+    width: 30%;
+    background-color: rgb(63, 63, 107);
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 28px;
+    transition-duration: 0.2s;
+    cursor: pointer;
+    opacity: 0.6;
+    border-radius: 18px;
+}
+
+.button-detect:hover{
+    opacity: 1;
+}
+
+.form-container{
+    width: 700px;
+    padding:15px;
+    border-radius: 15px;
+    box-shadow:         2px 2px 3px 3px #ccc;
+    background: rgb(61,54,173);
+background: linear-gradient(90deg, rgba(61,54,173,1) 8%, rgba(131,131,182,1) 54%, rgba(0,212,255,1) 79%);
+
+}
+
+.input{
+    font-size: 16px;
+    width: 70%;
+    border-radius: 18px;
+    margin-right: 5px;
+    outline: none;
+}

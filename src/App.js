@@ -1,23 +1,54 @@
-import logo from './logo.svg';
 import './App.css';
+import Signout from './components/signout/signout';
+import Logo from './components/logo/logo';
+import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
+import Rank from './components/Rank/Rank';
+import Particles from 'react-particles-js';
+
+const particlesOptions={
+  particles: {
+    number: {
+        value: 320,
+        density: {
+            enable: false
+        }
+    },
+    size: {
+        value: 10,
+        random: true
+    },
+    move: {
+        direction: "bottom",
+        out_mode: "out"
+    },
+    line_linked: {
+        enable: false
+    }
+},
+interactivity: {
+    events: {
+        onclick: {
+            enable: true,
+            mode: "remove"
+        }
+    },
+    modes: {
+        remove: {
+            particles_nb: 10
+        }
+    }
+}
+   }
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Particles params={particlesOptions} className='particles'/>
+    <Signout/>
+    <Logo/>
+    <Rank/>
+    <ImageLinkForm/>
+    
     </div>
   );
 }
