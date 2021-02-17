@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.container{
+    border-radius: 20px;
+    border: 2px solid red;
+    padding: 10px;
+    box-shadow:  5px 5px 5px 3px #ccc;
+    font-family: 'Nunito', sans-serif;
+}
